@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Swytch</title>
+  </head>
+  <body>
+      <div class="modal">
+          <div>
+            Order successful! 
+          </div>
+      </div>
+    <!-- presentation section  -->
+    <div class="presentation">
+      <div class="presentation-container">
+        <div class="presentation-text">
+          <div class="presentation-title">Universal eBike Conversion Kit</div>
+          <div class="presentation-description">
+            <strong>Convert ANY bike into an eBike</strong> with one of the
+            world’s smallest and lightest eBike conversion kits. Easy to install
+            on most bikes including road bikes, hybrid bikes, MTBs, Fixies,
+            Step-through bikes… and many more.
+          </div>
+        </div>
+
+        <div class="presentation-video">
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="640"
+            height="360"
+            src="https://www.youtube.com/embed/KEgxcv-NAzY?autoplay=1"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- purchase section  -->
+    <div class="purchase">
+        <div class="purchase-arrow"></div>
+        <div class="purchase-country">GB</div>
+        <div class="purchase-logo"><img src="./assets//images/logo.png" /></div>
+
+        <div class="purchase-container">
+            <div class="purchase-payment">
+                <div class="purchase-info">
+                    <div class="purchase-info-limited">
+                        <h1>Order Your Kit Now! </h1>
+                        <p>Limited Time Offer!</p>
+                        <div id="timer"></div>
+                    </div>
+                    
+                    <div class="purchase-info-summary">
+                        <h3>Summary</h3>
+                        <p>Universal kit only <span>1</span></p>
+                        <p>Single battery capacity version <span>1</span></p>  
+                        <p>Price <span>£799</span></p>       
+                        <p>Discount <span>50%</span></p>       
+                        <p>Total <span><strong>£399</strong></span></p>       
+                    </div>
+                </div>
+                <form id="form">
+                    <div class="purchase-payment-error">Invalid Input</div>
+                    <div class="purchase-payment-name-email">
+                        <div class="purchase-payment-name">
+                            <img src="./assets/images/name.png" />
+                            <input type="text" name="name" placeholder="Name" />
+                        </div>
+                        <div class="purchase-payment-email">
+                            <img src="./assets/images/email.png" />
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="purchase-payment-card">
+                        <img src="./assets/images/card.png" />
+                        <input id="input-card" type="text" name="card" placeholder="0000 0000 0000 0000" />
+                    </div>
+                    <div class="purchase-payment-expire-cvv">
+                        <div class="purchase-payment-expire">
+                            <input type="month" name="expire" placeholder="MM/YY" />
+                        </div>
+                        <div class="purchase-payment-cvv">
+                            <img src="./assets/images/cvv.png" />
+                            <input id="input-cvv" type="number" name="cvv" placeholder="CVV"  />
+                        </div>
+                    </div>
+                    <div class="purchase-payment-cardHolder">
+                        <img src="./assets/images/cardHolder.png" />
+                        <input type="text" name="cardHolder" placeholder="Card Holder Name" />
+                    </div>
+                <button type="submit" class="purchase-payment-button">
+                    <div class="purchase-payment-button-text">
+                        Pay
+                    </div>
+                    <div class="purchase-payment-button-loader"></div>
+                <button>
+                </form>
+            </div>
+    </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
