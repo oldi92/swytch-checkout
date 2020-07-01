@@ -204,6 +204,7 @@
 .purchase-payment-name img,
 .purchase-payment-email img,
 .purchase-payment-card img,
+.purchase-payment-expire img,
 .purchase-payment-cvv img,
 .purchase-payment-cardHolder img {
   position: absolute;
@@ -337,5 +338,11 @@
     margin-top: 20rem;
     width: 90%;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal div {
+    padding: 2rem;
   }
 }

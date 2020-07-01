@@ -11,11 +11,11 @@
     <title>Swytch</title>
   </head>
   <body>
-      <div class="modal">
-          <div>
-            Order successful! 
-          </div>
+    <div class="modal">
+      <div>
+        Order successful!
       </div>
+    </div>
     <!-- presentation section  -->
     <div class="presentation">
       <div class="presentation-container">
@@ -44,66 +44,83 @@
 
     <!-- purchase section  -->
     <div class="purchase">
-        <div class="purchase-arrow"></div>
-        <div class="purchase-country">GB</div>
-        <div class="purchase-logo"><img src="./assets//images/logo.png" /></div>
+      <div class="purchase-arrow"></div>
+      <div class="purchase-country">GB</div>
+      <div class="purchase-logo"><img src="./assets//images/logo.png" /></div>
 
-        <div class="purchase-container">
-            <div class="purchase-payment">
-                <div class="purchase-info">
-                    <div class="purchase-info-limited">
-                        <h1>Order Your Kit Now! </h1>
-                        <p>Limited Time Offer!</p>
-                        <div id="timer"></div>
-                    </div>
-                    
-                    <div class="purchase-info-summary">
-                        <h3>Summary</h3>
-                        <p>Universal kit only <span>1</span></p>
-                        <p>Single battery capacity version <span>1</span></p>  
-                        <p>Price <span>£799</span></p>       
-                        <p>Discount <span>50%</span></p>       
-                        <p>Total <span><strong>£399</strong></span></p>       
-                    </div>
-                </div>
-                <form id="form">
-                    <div class="purchase-payment-error">Invalid Input</div>
-                    <div class="purchase-payment-name-email">
-                        <div class="purchase-payment-name">
-                            <img src="./assets/images/name.png" />
-                            <input type="text" name="name" placeholder="Name" />
-                        </div>
-                        <div class="purchase-payment-email">
-                            <img src="./assets/images/email.png" />
-                            <input type="email" name="email" placeholder="Email" />
-                        </div>
-                    </div>
-                    <div class="purchase-payment-card">
-                        <img src="./assets/images/card.png" />
-                        <input id="input-card" type="text" name="card" placeholder="0000 0000 0000 0000" />
-                    </div>
-                    <div class="purchase-payment-expire-cvv">
-                        <div class="purchase-payment-expire">
-                            <input type="month" name="expire" placeholder="MM/YY" />
-                        </div>
-                        <div class="purchase-payment-cvv">
-                            <img src="./assets/images/cvv.png" />
-                            <input id="input-cvv" type="number" name="cvv" placeholder="CVV"  />
-                        </div>
-                    </div>
-                    <div class="purchase-payment-cardHolder">
-                        <img src="./assets/images/cardHolder.png" />
-                        <input type="text" name="cardHolder" placeholder="Card Holder Name" />
-                    </div>
-                <button type="submit" class="purchase-payment-button">
-                    <div class="purchase-payment-button-text">
-                        Pay
-                    </div>
-                    <div class="purchase-payment-button-loader"></div>
-                <button>
-                </form>
+      <div class="purchase-container">
+        <div class="purchase-payment">
+          <div class="purchase-info">
+            <div class="purchase-info-limited">
+              <h1>Order Your Kit Now!</h1>
+              <p>Limited Time Offer!</p>
+              <div id="timer"></div>
             </div>
-    </div>
+
+            <div class="purchase-info-summary">
+              <h3>Summary</h3>
+              <p>Universal kit only <span>1</span></p>
+              <p>Single battery capacity version <span>1</span></p>
+              <p>Price <span>£799</span></p>
+              <p>Discount <span>50%</span></p>
+              <p>
+                Total <span><strong>£399</strong></span>
+              </p>
+            </div>
+          </div>
+          <form id="form">
+            <div class="purchase-payment-error">Invalid Input</div>
+            <div class="purchase-payment-name-email">
+              <div class="purchase-payment-name">
+                <img src="./assets/images/name.png" />
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="purchase-payment-email">
+                <img src="./assets/images/email.png" />
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+            </div>
+            <div class="purchase-payment-card">
+              <img src="./assets/images/card.png" />
+              <input
+                id="input-card"
+                type="text"
+                name="card"
+                placeholder="0000 0000 0000 0000"
+              />
+            </div>
+            <div class="purchase-payment-expire-cvv">
+              <div class="purchase-payment-expire">
+                <img src="./assets/images/calendar.png" />
+                <input type="month" name="expire" placeholder="MM/YY" />
+              </div>
+              <div class="purchase-payment-cvv">
+                <img src="./assets/images/cvv.png" />
+                <input
+                  id="input-cvv"
+                  type="number"
+                  name="cvv"
+                  placeholder="CVV"
+                />
+              </div>
+            </div>
+            <div class="purchase-payment-cardHolder">
+              <img src="./assets/images/cardHolder.png" />
+              <input
+                type="text"
+                name="cardHolder"
+                placeholder="Card Holder Name"
+              />
+            </div>
+            <button type="submit" class="purchase-payment-button">
+              <div class="purchase-payment-button-text">
+                Pay
+              </div>
+              <div class="purchase-payment-button-loader"></div>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/js/app.js"></script>
